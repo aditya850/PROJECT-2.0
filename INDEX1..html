@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #navi{
+  background-color: #F6CECE;
+}
+li{
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+a{
+  color: #000000;
+}
+a:hover {
+  color: red;
+}
+hr{
+  margin-left: 5px;
+  margin-right: 5px;
+    border: 1px solid #000000;
+}
+svg :hover{
+  color: red;
+}
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #F6CECE; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#cards{
+  background-color: #A4A4A4;
+  font-size: 1.5em;
+}
+#cards:hover{
+  background-color: #F6CECE ;
+}
+
+footer{
+  float: right;
+  background-color: #F6CECE;
+}
+
+    </style>
+    <script>
+      $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+    <title>TEMPLATE</title>
+  </head>
+  <body>
+         <!-- nav starting -->
+  <nav id="navi" class="navbar navbar-expand-lg">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li style="margin-left: 200px;" class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+ <form class="form-inline searchform" action="/home" method="POST">
+                                    <!-- <li><input type="text"  name="search" class="typeahead tt-query" autocomplete="off" spellcheck="false"  placeholder="Search"><button type="submit" style="margin-top: 0px;" class="btn btn-default"><i class="fa fa-search"></i></button></li> -->
+                                    <div class="input-group">
+                                        <input  type="text"  class="form-control" size="10" name="search"
+                                            autocomplete="off" spellcheck="false" placeholder="Search"
+                                            style=" border-radius: 20px 0 0 20px; border: 0; background-color: white;">
+                                        <span class="input-group-btn">
+                                            <!-- <button class="btn btn-default" type="button">Go!</button> -->
+                                            <button style="height: 34px; border-radius: 0 20px 20px 0; border: 0; color: #ffffff"
+                                                type="submit" class="btn btn-default"><i
+                                                    class="fa fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+  </div>
+  
+  <a href="#"><svg data-toggle="tooltip" title="LOG-IN" data-placement="bottom" style="margin-right: 5px; margin-left: 70px"  width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cursor" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
+  </svg></a>
+</nav>
+
+         <!-- end of nav -->
+
+  <!-- slide bar -->
+  <div class="sidenav">
+  <a href="#" style="margin-top: 85px;font-size: 2em">About</a>
+  <a href="#" style="font-size: 2em">Services</a>
+  <a href="#" style="font-size: 2em">Clients</a>
+  <a href="#" style="font-size: 2em">Contact</a>
+  <a href="#" style="font-size: 2em">About</a>
+  <a href="#" style="font-size: 2em">Services</a>
+  <a href="#" style="font-size: 2em">Clients</a>
+  <a href="#" style="font-size: 2em">Contact</a>
+  <a href="#" style="font-size: 2em">Contact</a>
+  <hr>
+  </div>
+
+  <!-- end of slide bar -->
+
+  <!-- card -->
+  <div class="card col-lg-5 col-md-5" style="float: right; margin-right: 20px;margin-bottom: 20px; margin-top: 20px;" id="cards">
+  <div class="card-body">
+    <h1 class="card-title">Card title</h1>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text"><STRONG>Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</STRONG></p>
+    <hr style="border:2px solid #000000">
+    <a href="#" class="card-link" style="text-transform: uppercase;">Card link</a>
+    <a href="#" class="card-link" style="text-transform: uppercase;">Another link</a>
+  </div>
+  </div>
+
+  <div class="card col-lg-5 col-md-5" style="float: right; margin-right: 20px;margin-bottom: 20px; margin-top: 20px;" id="cards">
+  <div class="card-body">
+    <h1 class="card-title">Card title</h1>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text"><strong>Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</strong></p>
+    <hr style="border:2px solid #000000">
+    <a href="#" class="card-link" style="text-transform: uppercase;">Card link</a>
+    <a href="#" class="card-link" style="text-transform: uppercase;">Another link</a>
+  </div>
+  </div>
+
+  <div class="card col-lg-5 col-md-5" style="float: right; margin-right: 20px;margin-bottom: 20px; margin-top: 20px;" id="cards">
+  <div class="card-body">
+    <h1 class="card-title">Card title</h1>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text"><strong>Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</strong></p>
+   <hr style="border:2px solid #000000">
+    <a href="#" class="card-link" style="text-transform: uppercase;">Card link</a>
+    <a href="#" class="card-link" style="text-transform: uppercase;">Another link</a>
+  </div>
+  </div>
+  
+  <div class="card col-lg-5 col-md-5" style="float: right; margin-right: 20px;margin-bottom: 20px; margin-top: 20px;" id="cards">
+  <div class="card-body">
+    <h1 class="card-title">Card title</h1>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text"><strong>Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</strong></p>
+    <hr style="border:2px solid #000000">
+    <a href="#" class="card-link" style="text-transform: uppercase;">Card link</a>
+    <a href="#" class="card-link" style="text-transform: uppercase;">Another link</a>
+  </div>
+  </div>
+
+  <!-- end of card -->
+  <!--footor -->
+   <footer style="float: right; padding-left: 300px;">
+  
+  <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p><i>Here you can use rows and columns to organize your footer content.Here you can use rows and columns to organize your footer content.Here you can use rows and columns to organize your footer content.Here you can use rows and columns to organize your footer content.Here you can use rows and columns to organize your footer content.Here you can use rows and columns to organize your footer content.Here you can use rows and columns to organize your footer content.</i></p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#">COMPANY NAME</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+   </footer>
+  <!-- end of footor-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
